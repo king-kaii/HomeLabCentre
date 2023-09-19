@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormArray, FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { MatDialog } from '@angular/material/dialog';
 import { ViewPresciptionComponent } from './view-presciption/view-presciption.component';
+import { GlobalService } from '../services/global.service';
 
 @Component({
   selector: 'app-patient',
@@ -16,7 +17,7 @@ prescriptionImageURL: string | ArrayBuffer | any | null = null ;
 showDisList: boolean = false;
 lang: string = 'English';
 isLang: boolean = false;
-constructor(private fb: FormBuilder,private dialog: MatDialog){
+constructor(private fb: FormBuilder,private dialog: MatDialog , private global: GlobalService){
   this.form = this.fb.group({
     name: new FormControl('',[Validators.required,Validators.minLength(6)]),
     symptoms: new FormControl('',[Validators.required,Validators.minLength(6)]),
@@ -34,7 +35,7 @@ ngOnInit() {
 
   submit(){
     console.log(this.form.value);
-    
+    this.global.postPatientData(this.form.value)
   }
 
   prevDisease(){

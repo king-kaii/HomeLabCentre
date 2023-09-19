@@ -4,12 +4,6 @@
   "newProjectRoot": "projects",
   "projects": {
     "HomeLabCentre": {
-      "i18n": {
-        "sourceLocale": "en",
-        "locales": {
-          "or": "src/locale/messages.or.xlf"
-        }
-      },
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
