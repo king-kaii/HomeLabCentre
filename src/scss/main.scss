@@ -1,0 +1,495 @@
+/* Base styles */
+.background-container {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex;
+    position: relative;
+  }
+
+  .centre-cont{
+  position: relative;
+  flex: 6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 120px;
+  }
+  .first-cont{
+    font-size: 30px;
+    color: white;
+  }
+  .sec-cont{
+    font-size: 23px;
+    color: rgba(255, 4, 0, 0.607);
+  }
+
+  
+  .background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(28, 22, 22, 0.799);
+  }
+  
+  /* Navbar styles */
+  .navbar {
+    position: relative;
+    display: flex;
+    background-color: rgb(94, 90, 90);;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 0.1px;
+    margin-top: 20px;
+  }  
+  .lifeStyle {
+    background-color: transparent;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 25px;
+  }
+  
+  .gym {
+    font-size: 12px;
+  }
+  .signup{
+    position: relative;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+  }
+  .content{
+    justify-content: center;
+  }
+  .signup-btn{
+    background-color: rgba(0, 119, 255, 0.724); 
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+  .drop {
+    width: 200px; /* Set the width of the div */
+    height: 100px; /* Set the height of the div */
+    /* Set background color */
+    position: absolute; /* Position it absolutely within the container */
+    left: 0; /* Place it at the extreme left within the container */
+    top: 0;
+
+  }
+  
+  /* Dropdown styles */
+  .dropdown {
+    position: relative;
+  }
+  .dropdown-report{
+    position: relative;
+    margin-left: 600px;
+  }
+  
+  .dropbtn {
+    background-color: transparent;
+    position: relative;
+    display: inline;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+  
+  .dropbtn:hover {
+    position: relative;
+    background-color: none;
+    color: red;
+    border: none;
+    padding: none;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    top: 100%;
+    left: 0;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #f1f1f1;
+  }
+
+ 
+  .horizontal-box {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 25px;
+  }
+  
+  .compartment {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+  
+  .white-compartment {
+    position: relative;
+    background-color: white;
+  }
+  
+  .red-compartment {
+    position: relative;
+    background-color: rgba(240, 94, 58, 0.815);
+  }
+  
+  .blue-compartment {
+    position: relative;
+    background-color: rgb(18, 129, 219);
+  }
+  
+.box-one{
+    position: relative;
+    margin-top: 13px;
+    margin-left: 10px;
+    color: rgb(18, 129, 219);
+}
+.special-promo{
+    margin-left: 29px;
+    color: white;
+    font-size: 20px;
+}
+.lorem-dic{
+    margin-top: 10px;
+}
+.lorem{
+    margin-left: 29px;
+    font-size: 12px;
+    color: white;
+}
+
+.slider-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  flex: 0 0 100%;
+  transition: opacity 0.5s ease-in-out;
+}
+.active {
+  border-bottom: 2px solid blue; /* Add your desired styling */
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+  
+ 
+  
+  
+  
+  .dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .dots span {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: gray;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  
+  .dots span.active { 
+    background-color: black;
+  }
+  
+.price-btn{
+    margin-top: 1px;
+    margin-bottom: 19px;
+    margin-left: 29px;
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 12px;
+}
+.contact{
+    position: relative;
+    margin-left: 25px;
+    color: white;
+}
+.call{
+    position: relative;
+    margin-left: 25px;
+    margin-top: 15px;
+    color: white;
+}
+.mail{
+    position: relative;
+    margin-left: 25px;
+    margin-top: 1px;
+    color: white;
+}
+.cont-btn{
+    margin-top: 1px;
+    margin-bottom: 19px;
+    margin-left: 25px;
+    background-color: rgb(39, 104, 147);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 12px;
+}
+.news-item {
+    display: flex;
+    align-items: center; /* Vertically center align items */
+  }
+  
+  .news-image {
+    width: 100px; /* Adjust the image width as needed */
+    height: auto;
+    margin-right: 10px;
+  }
+  
+  .news-text {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .by-2{
+    font-weight: bold;
+  }
+  .by-3{
+    font-weight: bold;
+    margin-top: 19px;
+  }
+  .by{
+    margin-top: 10px;
+  }
+  .sarah{
+    color: wheat;
+    border: 1px solid green;
+   background-color: green;
+   padding: 5px;
+   border-radius: 3px;
+    
+  }
+  .oct{
+    color: darkgrey;
+  }
+  
+  /* Responsive Styles */
+  @media screen and (max-width: 768px) {
+    .lifeStyle {
+      font-size: 20px;
+    }
+    
+    .dropbtn {
+      font-size: 14px;
+      padding: 8px 12px;
+    }
+    
+    .navbar {
+      padding: 10px;
+    }
+  }
+
+  .custom-search-box {
+    display: flex;
+    align-items: center;
+    border: 2px solid #ccc;
+    border-radius: 30px; /* Adjust the value to control the roundness of the ends */
+    width: 300px; /* Adjust the width as needed */
+    height: 40px;
+    background-color: white;
+    margin-left: 20px;
+    margin-right: 20px;
+    
+  }
+  .custom-slocation-box{
+    display: flex;
+    align-items: center;
+    border: 2px solid #ccc;
+    border-radius: 30px; /* Adjust the value to control the roundness of the ends */
+    width: 300px; /* Adjust the width as needed */
+    height: 40px;
+    background-color: white;
+  }
+  .custom{
+    display: flex;
+    align-items: center;
+    margin-left: 250px;
+  }
+  .text{
+    display: flex;
+    align-items: center;
+    margin-left: 80px;
+  }
+  .call{
+    display: flex;
+    align-items: center;
+    margin-right: 6px;
+  }
+  .person{
+    display: flex;
+    align-items: center;
+    margin-right: 9px;
+  }
+  .cart{
+    display: flex;
+    align-items: center;
+  }
+
+  
+input[type="text"] {
+  border: none;
+  outline: none;
+  flex: 1;
+  padding: 10px;
+  border-radius: 30px; /* Match the roundness of the ends */
+  pointer-events: auto;
+}
+  
+.container{
+    margin-top: 40px;
+    margin-left: 500px;
+}
+.book{
+    margin-left: 40px;
+}
+.input-container {
+    position: relative;
+  }
+  
+  .division-box {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 100%;
+  }
+  
+  input[type="text"] {
+    width: 100%;
+    border: none;
+    outline: none;
+    flex: 1;
+    padding: 10px;
+    border-radius: 30px;
+    pointer-events: auto;
+  }
+  
+  ul.suggestions {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ccc;
+    max-height: 150px; 
+    overflow-y: auto;
+    width: 299px;
+    margin-top: 193px;
+  }
+  
+  ul.suggestions li {
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  ul.suggestions li:hover {
+    background-color: #f0f0f0;
+  }
+  ul.locations {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ccc;
+    max-height: 150px; 
+    overflow-y: auto;
+    width: 299px;
+    margin-top: 163px;
+    cursor: pointer;
+  }
+  ul.locations li {
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  ul.locations li:hover {
+    background-color: #f0f0f0;
+    cursor: pointer;
+  }
+  .box{
+    display: flex;
+    align-items: center;
+  }
+  .location-cotainer{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 300px;
+    height: 40px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+  }
+  .search-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 300px; 
+    height: 40px;
+    margin-right: 400px;
+    margin-right: 5px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+  }
+  

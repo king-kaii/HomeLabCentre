@@ -1,0 +1,25 @@
+
+    <mat-card class="login-card">
+        <mat-card-content>
+            <form [formGroup]="addStaff" (ngSubmit)="addStaffs()">
+                <label>Enter your name</label>
+                <mat-form-field>
+                    <input matInput placeholder="Firstname" formControlName="firstname">
+                </mat-form-field>
+                <mat-form-field>
+                    <input matInput placeholder="Lastname" formControlName="lastname">
+                </mat-form-field>
+                <mat-form-field>
+                    <input matInput placeholder="Gender" formControlName="Gender">
+                </mat-form-field>
+                <mat-form-field>
+                    <input matInput placeholder="DOB" formControlName="DOB">
+                </mat-form-field>
+                <button mat-button>Submit</button>
+                <button mat-dialog-close>Close</button>
+            </form>
+        </mat-card-content>
+    </mat-card>
+
+
+

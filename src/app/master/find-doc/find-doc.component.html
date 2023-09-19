@@ -1,0 +1,31 @@
+<div class="container">
+    <div>
+        <h1>Your Home for Health</h1>
+    </div>
+   <br>
+    <div class="book">
+        <h3>Find and Book</h3>
+    </div>
+    <div class="box">
+      <div class="location-cotainer" >
+        <mat-icon matSuffix>place</mat-icon>
+       <input type="text" (focus)="showLocation = true" (blur)="onBlur()" placeholder="Location" [formControl]="searchLocation">
+       <ul class="locations" *ngIf="showLocation">
+         <li *ngFor="let location of showLocations" (click)="selectLocation(location)" >{{ location }}</li>
+       </ul>
+       </div>
+       <div class="search-container">
+        <mat-icon matSuffix>search</mat-icon>
+        <input type="text" (focus)="showSuggestions = true" (blur)="onBlur()" placeholder="Search" [formControl]="searchTerm">
+        <ul class="suggestions" *ngIf="showSuggestions">
+         <li *ngFor="let suggestion of suggestions" (click)="selectSuggestion(suggestion)">{{ suggestion }}</li>
+       </ul>
+       </div>
+       <div>
+        <app-doctor-list *ngIf="isDoctorList == true"></app-doctor-list>
+      </div>
+    </div>
+    
+    
+  
+</div>

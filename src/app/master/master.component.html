@@ -1,0 +1,88 @@
+<!-- <mat-toolbar color="primary">
+      <a mat-list-item routerLink="/">Staffs</a>
+      <a mat-list-item routerLink="/about">Students </a>
+      <a mat-list-item routerLink="/contacts">Spceialist </a>
+    
+  </mat-toolbar>
+
+  <button (click)="addStaff()">click</button> -->
+
+   <div class="background-container">
+    <div class="background-overlay">
+     <div class="content">
+        <div class="drop">
+            <div class="lifeStyle">
+              HomeLab<br>
+              <span class="gym">
+               Test Center
+              </span>
+            </div>
+          </div>
+         <app-search></app-search>
+      <nav class="navbar">
+        <div class="dropdown">
+            <button class="dropbtn"><mat-icon>menu</mat-icon></button>
+            <div class="dropdown-content">
+              <div class="dropdown-content">
+                <a href="#">Client</a>
+                <a routerLink="/addeditstaffs">Staffs</a>
+              </div> 
+            </div>
+            
+        </div>
+        <div class="dropdown" [ngClass]="{'active': isTestSelected}">
+          <button class="dropbtn" (click)="toggleTestSelection()">FindDoctor</button>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">PACKAGE</button>
+          <div class="dropdown-content">
+            <a href="#">About Ecuador</a>
+              <a href="#">Item 2</a>
+              <a href="#">Item 3</a>
+          </div>
+        </div>
+  
+      
+      <div class="dropdown">
+        <button class="dropbtn">Activites</button>
+        <div class="dropdown-content">
+          <a href="#">Item 1</a>
+          <a href="#">Item 2</a>
+          <a href="#">Item 3</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">BLOG</button>
+        <div class="dropdown-content">
+          <a href="#">Contact</a>
+          <a href="#">Item 2</a>
+          <a href="#">Item 3</a>
+        </div>
+      </div>
+      <div class="dropdown-report">
+       <div class="dropdown">
+        <button class="dropbtn">DOWNLOAD</button>
+        <div class="dropdown-content">
+          <a href="#">Report</a>
+          <a href="#">Prescription</a>
+          <a href="#">Item 3</a>
+        </div> 
+       </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">UPLOAD</button>
+        <div class="dropdown-content">
+          <a href="#">Prescription</a>
+        </div>
+       </div>
+  
+     </nav>
+    
+    <div>
+      <app-find-doc *ngIf="isTestSelected == true"></app-find-doc>
+    </div>
+    </div>
+  </div>
+  
+
+  

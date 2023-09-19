@@ -1,0 +1,45 @@
+<nav class="navbar"><button class="dropbtn">VideoConsult</button> <button class="dropbtn">Availibilty</button> <div class="dropdown">
+    <button class="dropbtn">All Filter</button>
+    <div class="dropdown-content">
+        <span class="col" (click)="filterList()">Experience above 10yr</span>
+      </div>
+</div> <button class="dropbtn" *ngIf="isFiltered == true" (click)="resetFilter()">Reset</button></nav>
+<div *ngIf="showEyeDoct == true">
+    <ul *ngFor="let doc of eyeDoct">
+        <li><strong>Name: </strong> {{doc.name}}<br>
+        <strong>Experience: </strong> {{doc.experience}} <br>
+        <strong>Address: </strong> {{doc.address}} <br>
+        <button>Book Slot</button>
+    </li>
+    </ul>
+</div>
+
+<div *ngIf="showDentalDoc == true">
+    <ul *ngFor="let doc of dentalDOc">
+        <li> <strong>Name: </strong> {{doc.name}} <br>
+            <strong>Experience: </strong> {{doc.experience}} <br>
+            <strong>Address: </strong> {{doc.address}} <br>
+            <button>Book Slot</button>
+        </li>
+    </ul>
+</div>
+
+<div *ngIf="showGenralDoc == true">
+    <ul *ngFor="let doc of generalDoc">
+        <li><strong>Name: </strong> {{doc.name}}<br>
+            <strong>Experience: </strong> {{doc.experience}} <br>
+            <strong>Address: </strong> {{doc.address}} <br>
+            <button>Book Slot</button>
+        </li>
+    </ul>
+</div>
+<div *ngIf="showorthopedicDoc == true">
+   <ul *ngFor="let doc of orthopedicDoc">
+    <li>
+            <strong>Name: </strong> {{doc.name}}<br>
+            <strong>Experience: </strong> {{doc.experience}} <br>
+            <strong>Address: </strong> {{doc.address}} <br>
+            <button>Book Slot</button>
+    </li>
+   </ul>
+</div>

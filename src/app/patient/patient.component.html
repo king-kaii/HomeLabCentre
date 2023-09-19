@@ -1,0 +1,56 @@
+<mat-slide-toggle (click)="changeLang()">{{lang}}</mat-slide-toggle>
+<div *ngIf="isLang ==false" class="background-image">  
+    <div class="center-container">   
+   <mat-card class="patient-card">
+        <form [formGroup]="form">
+                
+            <div class="mat-input-field">
+                <mat-form-field class="input">
+                    <mat-label>Name: </mat-label>
+                    <input matInput placeholder="Name" formControlName="name" class="custom-input">
+                  </mat-form-field>
+            </div>
+            <mat-form-field class="input">
+                <mat-label>Symtoms: </mat-label>
+                <input matInput placeholder="Enter your Symtoms" formControlName="symptoms">
+              </mat-form-field > <br>
+              <mat-form-field class="input">
+                <mat-label>Age </mat-label>
+                <input matInput placeholder="Enter your Age" formControlName="age">
+              </mat-form-field><br>
+              <mat-form-field class="input">
+                <mat-label>Gender: </mat-label>
+                <mat-select placeholder="Enter your Gender" appearance="fill" formControlName="gender">
+                    <mat-option value="Male">Male</mat-option>
+                    <mat-option value="Female">Female</mat-option>
+                    <mat-option value="Other">Other</mat-option>
+                </mat-select>
+              </mat-form-field> <br>
+              <mat-radio-group aria-label="Select an option" (change)="prevDisease()" formControlName="previouDisease">
+                <mat-label>Is you have any previous disease? </mat-label>
+                <mat-radio-button value="1">Yes</mat-radio-button>
+                <mat-radio-button value="2">No</mat-radio-button>
+              </mat-radio-group> <br>
+
+              <div *ngIf="showDisList == true">
+                <mat-form-field appearance="fill">
+                    <mat-label>Name your disease: </mat-label>
+                    <mat-select formControlName="disEase" multiple>
+                        <mat-option *ngFor="let option of disease" [value]="option">
+                        {{option}}
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+              </div><br>
+                <mat-label>Upload Prescription </mat-label>
+                <input placeholder="Enter your Symtoms" type="file"  formControlName="uploadPresciption" accept=".jpeg,.jpg,.png" (change)="onFileChange($event)">
+                <button mat-raised-button color="primary" (click)="viewPres()">View</button><br>
+                
+              
+                <button mat-raised-button color="primary" (click)="submit()">Submit</button>
+
+          </form>
+        </mat-card>
+</div>
+</div>
+<app-odiaform *ngIf="isLang==true"></app-odiaform>

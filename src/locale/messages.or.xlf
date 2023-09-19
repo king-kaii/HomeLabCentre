@@ -1,0 +1,4 @@
+<trans-unit id="greeting">
+  <source>Hello, World!</source>
+  <target>ନମସ୍କାର, ବିଶ୍ୱ!</target>
+</trans-unit>
