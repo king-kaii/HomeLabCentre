@@ -35,7 +35,10 @@ ngOnInit() {
 
   submit(){
     console.log(this.form.value);
-    this.global.postPatientData(this.form.value)
+    this.global.postPatientData(this.form.value).subscribe((data)=>{
+      console.log('Data after .... post ' ,data);
+      
+    })
   }
 
   prevDisease(){
