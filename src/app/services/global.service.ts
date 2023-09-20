@@ -1,4 +1,4 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
 
@@ -15,7 +15,11 @@ export class GlobalService {
     this.dataSubj.next(data)
   }
   postPatientData(data:any){
-  return this.http.post(`${this.url}`, data)
+    const headers = new HttpHeaders({
+      'Content-Type': 'application/json',
+      'Access-Control-Allow-Origin': '*' 
+    });
+  return this.http.post(`${this.url}`, data, {headers})
   }
  
 }
