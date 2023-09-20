@@ -1,3 +1,5 @@
+
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
 .form{
     margin-left: 400px;
     margin-top: 30px;
@@ -48,4 +50,10 @@
     background-color: transparent;
     border: none; 
   }
+
+  /* app.component.css or your custom CSS file */
+
+/* Override the background color of the form field */
+
+  
  

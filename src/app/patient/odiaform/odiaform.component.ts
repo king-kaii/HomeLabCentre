@@ -11,7 +11,7 @@ import { ViewPresciptionComponent } from '../view-presciption/view-presciption.c
 export class OdiaformComponent {
   form!: FormGroup
  disList : any[] = []
-  disease =['ମଧୁମେହ','ହୃଦ୍ବାହିକା','କର୍କଟ']
+  disease = ['ମଧୁମେହ','ହୃଦ୍ବାହିକା','କର୍କଟ']
   prescriptionImageURL: string | ArrayBuffer | any | null = null ;
   showDisList: boolean = false;
 constructor(private fb: FormBuilder,private dialog: MatDialog){

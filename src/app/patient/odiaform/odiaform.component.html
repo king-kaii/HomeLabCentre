@@ -5,34 +5,34 @@
    <mat-card class="patient-card">
         <form [formGroup]="form">
                 
-            <mat-form-field class="input">
+            <mat-form-field appearance="outline" class="input">
               <mat-label>ନାମ: </mat-label>
               <input matInput placeholder="ନାମ" formControlName="name">
             </mat-form-field> <br>
-            <mat-form-field class="input">
+            <mat-form-field appearance="outline" class="input">
                 <mat-label>ଲକ୍ଷଣ: </mat-label>
                 <input matInput placeholder="ଆପଣଙ୍କ ଲକ୍ଷଣକୁ ଏଣ୍ଟ୍ରି କରନ୍ତୁ" formControlName="symptoms">
               </mat-form-field > <br>
-              <mat-form-field class="input">
+              <mat-form-field appearance="outline" class="input">
                 <mat-label>ବୟସ </mat-label>
                 <input matInput placeholder="ଆପଣଙ୍କ ବୟସ ଏଣ୍ଟ୍ରି କରନ୍ତୁ" formControlName="age">
               </mat-form-field><br>
-              <mat-form-field class="input">
+              <mat-form-field appearance="outline" class="input">
                 <mat-label>ଲିଙ୍ଗ: </mat-label>
-                <mat-select placeholder="ଆପଣଙ୍କ ଲିଙ୍ଗ ଏଣ୍ଟ୍ରି କରନ୍ତୁ" appearance="fill" formControlName="gender">
+                <mat-select appearance="outline" placeholder="ଆପଣଙ୍କ ଲିଙ୍ଗ ଏଣ୍ଟ୍ରି କରନ୍ତୁ" appearance="fill" formControlName="gender">
                     <mat-option value="Male">ପୁରୁଷ</mat-option>
                     <mat-option value="Female">ନାରୀ</mat-option>
                     <mat-option value="Other">ଅନ୍ୟାନ୍ୟ</mat-option>
                 </mat-select>
               </mat-form-field> <br>
-              <mat-radio-group aria-label="Select an option" (change)="prevDisease()" formControlName="previouDisease">
+              <mat-radio-group appearance="outline" aria-label="Select an option" (change)="prevDisease()" formControlName="previouDisease">
                 <mat-label>ଆପଣଙ୍କର ପୂର୍ବ ରୋଗ ଅଛି କି? </mat-label>
                 <mat-radio-button value="1">ହଁ</mat-radio-button>
                 <mat-radio-button value="2">ନାହିଁ</mat-radio-button>
               </mat-radio-group> <br>
 
               <div *ngIf="showDisList == true">
-                <mat-form-field appearance="fill">
+                <mat-form-field appearance="outline">
                     <mat-label>ନିଜ ରୋଗର ନାଁ ରଖନ୍ତୁ: </mat-label>
                     <mat-select formControlName="disEase" multiple>
                         <mat-option *ngFor="let option of disease" [value]="option">
